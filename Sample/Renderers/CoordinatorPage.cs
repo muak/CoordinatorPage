@@ -22,5 +22,6 @@ namespace Sample.Renderers
         {
             return (bool)view.GetValue(IsBarScrollProperty);
         }
+
     }
 }

@@ -2,6 +2,7 @@
 using Prism.Ioc;
 using Prism.Unity;
 using Sample.Views;
+using Sample.Renderers;
 
 namespace Sample
 {
@@ -14,13 +15,13 @@ namespace Sample
 		{
 			InitializeComponent();
 
-			NavigationService.NavigateAsync("MyNavigationPage/MainPage");
+			NavigationService.NavigateAsync("CoordinatorPage/MainPage");
 		}
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<MainPage>();
-            containerRegistry.RegisterForNavigation<MyNavigationPage>();
+            containerRegistry.RegisterForNavigation<CoordinatorPage>();
         }
     }
 }
